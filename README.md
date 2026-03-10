@@ -1,1 +1,190 @@
-# ITSoftVision-CRM
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM Експерт | Системні рішення для бізнесу</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-deep: #000c1d;
+            --blue-gradient: linear-gradient(135deg, #001f3f 0%, #003366 100%);
+            --accent-blue: #00a2ff;
+            --glass: rgba(255, 255, 255, 0.05);
+            --text-light: #ffffff;
+            --orange: #ff7a45;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+            color: #1d1d1f;
+            scroll-behavior: smooth;
+        }
+
+        /* HERO SECTIONз глибоким синім */
+        .hero {
+            background: var(--bg-deep) url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+            background: radial-gradient(circle at top right, #003366, var(--bg-deep));
+            color: var(--text-light);
+            padding: 120px 20px;
+            text-align: center;
+            border-bottom-left-radius: 80px;
+            border-bottom-right-radius: 80px;
+        }
+
+        .container { max-width: 1100px; margin: 0 auto; }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            margin-bottom: 20px;
+            line-height: 1.1;
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            opacity: 0.8;
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+
+        .cta-btn {
+            background: var(--orange);
+            color: white;
+            padding: 20px 45px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 800;
+            font-size: 1.1rem;
+            display: inline-block;
+            box-shadow: 0 10px 20px rgba(255, 122, 69, 0.3);
+            transition: 0.3s;
+        }
+
+        .cta-btn:hover { transform: translateY(-3px); box-shadow: 0 15px 25px rgba(255, 122, 69, 0.4); }
+
+        /* СКЛЯНІ КАРТКИ */
+        .section-title {
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            margin: 80px 0 50px;
+            color: #001f3f;
+        }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+            border: 1px solid rgba(0,0,0,0.03);
+            transition: 0.3s;
+        }
+
+        .card:hover { transform: translateY(-10px); border-color: var(--accent-blue); }
+
+        .card h3 { color: #003366; margin-top: 0; font-size: 1.5rem; }
+
+        /* ЕТАПИ РОБОТИ (Dark Blue) */
+        .steps-block {
+            background: var(--bg-deep);
+            color: white;
+            padding: 80px 40px;
+            border-radius: 50px;
+            margin: 60px 0;
+        }
+
+        .step-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(255,255,255,0.03);
+            border-radius: 20px;
+        }
+
+        .step-num {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--accent-blue);
+            margin-right: 25px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--bg-deep);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            border-top-left-radius: 80px;
+            border-top-right-radius: 80px;
+        }
+
+        .tg-link { color: var(--accent-blue); font-size: 1.8rem; font-weight: bold; text-decoration: none; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="container">
+            <h1>ПЕРЕТВОРІТЬ ХАОС<br>НА КЕРОВАНУ СИСТЕМУ</h1>
+            <p>Експертне впровадження CRM для бізнесу. Ми налаштуємо процеси так, щоб ви бачили гроші, а не звіти.</p>
+            <a href="https://t.me/YOUR_USERNAME" class="cta-btn">БЕЗКОШТОВНИЙ АУДИТ БІЗНЕСУ</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <h2 class="section-title">Чому обирають системність?</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Контроль бази</h3>
+                <p>Кожен лід у системі. Жоден клієнт не піде до конкурента просто тому, що менеджер забув перетелефонувати.</p>
+            </div>
+            <div class="card">
+                <h3>Прозора аналітика</h3>
+                <p>Ви бачите реальні цифри продажів, конверсію та ефективність кожного співробітника в реальному часі.</p>
+            </div>
+            <div class="card">
+                <h3>Автоматизація</h3>
+                <p>Ми прибираємо 40% рутини. Система сама створює угоди, нагадує про зустрічі та відправляє рахунки.</p>
+            </div>
+        </div>
+
+        <div class="steps-block">
+            <h2 style="text-align: center; margin-bottom: 40px;">Етапи впровадження</h2>
+            <div class="step-item">
+                <div class="step-num">01</div>
+                <div><b>Аудит:</b> Аналізуємо ваші продажі.</div>
+            </div>
+            <div class="step-item">
+                <div class="step-num">02</div>
+                <div><b>Проєктування:</b> Створюємо карту автоматизації.</div>
+            </div>
+            <div class="step-item">
+                <div class="step-num">03</div>
+                <div><b>Налаштування:</b> Інтегруємо CRM та месенджери.</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <h2>Готові навести лад?</h2>
+            <p>Напишіть мені в Telegram, щоб отримати план автоматизації для вашої ніші.</p>
+            <a href="https://t.me/YOUR_USERNAME" class="tg-link">@написати_експерту</a>
+            <p style="margin-top: 50px; opacity: 0.3;">© 2026 CRM Systems Expert</p>
+        </div>
+    </footer>
+
+</body>
+</html>
